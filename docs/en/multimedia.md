@@ -14,7 +14,7 @@ Full transcript support for better user experience.
 
 ### Category
 
-<RouteEn author="nczitzk" example="/7mmtv/zh/censored_list/all" path="/7mmtv/:language?/:category?/:type?" :paramsDesc="['Language, see below, `en` as English by default', 'Category, see below, `censored_list` as Censored by default', 'Server, see below, all server by default']">
+<RouteEn author="nczitzk" example="/7mmtv/zh/censored_list/all" path="/7mmtv/:language?/:category?/:type?" :paramsDesc="['Language, see below, `en` as English by default', 'Category, see below, `censored_list` as Censored by default', 'Server, see below, all server by default']" anticrawler="1">
 
 **Language**
 
@@ -42,7 +42,7 @@ Full transcript support for better user experience.
 
 ### Maker
 
-<RouteEn author="nczitzk" example="/7mmtv/zh/amateurjav_makersr/1752" path="/7mmtv/:language?/:category?/:id?" :paramsDesc="['Language, see below, `en` as English by default', 'Category, see below', 'Id, see below']">
+<RouteEn author="nczitzk" example="/7mmtv/zh/amateurjav_makersr/1752" path="/7mmtv/:language?/:category?/:id?" :paramsDesc="['Language, see below, `en` as English by default', 'Category, see below', 'Id, see below']" anticrawler="1">
 
 **Language**
 
@@ -152,6 +152,12 @@ Official RSS: <https://eztv.io/ezrss.xml>
 ### Recent Videos
 
 <RouteEn author="everyonus" example="/hentaimama/videos" path="/hentaimama/videos" />
+
+## IBC 岩手放送
+
+### イヤーマイッタマイッタ
+
+<RouteEn author="fengkx" example="/ibc/maitta" path="/ibc/maitta" supportPodcast="1" radar="1"/>
 
 ## JavBus
 
@@ -461,9 +467,9 @@ See [Directory](https://www.javlibrary.com/en/star_list.php) to view all stars.
 
 Refer to [Pornhub F.A.Qs](https://help.pornhub.com/hc/en-us/articles/360044327034-How-do-I-change-the-language-), English by default. For example:
 
-- `cn` (Chinese), for Pornhub in China <https://cn.pornhub.com/>；
+-   `cn` (Chinese), for Pornhub in China <https://cn.pornhub.com/>；
 
-- `jp` (Japanese), for Pornhub in Japan <https://jp.pornhub.com/> etc.
+-   `jp` (Japanese), for Pornhub in Japan <https://jp.pornhub.com/> etc.
 
 ## PRESTIGE(プレステージ)
 
@@ -522,6 +528,46 @@ Refer to [Pornhub F.A.Qs](https://help.pornhub.com/hc/en-us/articles/36004432703
 ### Personal Top Artists
 
 <RouteEn author="outloudvi" example="/spotify/top/artists" path="/spotify/top/artists" />
+
+## The Movie Database
+
+::: tip Tips
+Refer to <https://developers.themoviedb.org/3/getting-started/languages> for the language parameter in the route.
+:::
+
+### Collection
+
+<RouteEn author="x2cf" example="/themoviedb/collection/131292/en-US" path="/themoviedb/collection/:id/:lang?" :paramsDesc="['Collection ID', 'Language']" radar="1" rssbud="1" />
+
+### Trending
+
+<RouteEn author="x2cf" example="/themoviedb/trending/tv/day/en-US" path="/themoviedb/trending/:mediaType/:timeWindow/:lang?" :paramsDesc="['`movie` or `tv`', '`day` or `week`', 'Language']" radar="1" rssbud="1" />
+
+### TV Show Seasons
+
+<RouteEn author="x2cf" example="/themoviedb/tv/70593/seasons/en-US" path="/themoviedb/tv/:id/seasons/:lang?" :paramsDesc="['TV show ID', 'Language']" radar="1" rssbud="1" />
+
+### TV Show Episodes
+
+<RouteEn author="x2cf" example="/themoviedb/tv/70593/seasons/1/episodes/en-US" path="/themoviedb/tv/:id/seasons/:seasonNumber/episodes/:lang?" :paramsDesc="['TV show ID', 'Season number', 'Language']" radar="1" rssbud="1" />
+
+### Sheet
+
+<RouteEn author="x2cf" example="/themoviedb/tv/top-rated/en-US" path="/themoviedb/:mediaType/:sheet/:lang?" :paramsDesc="['`movie` or `tv`', 'Sheet, see below', 'Language']" radar="1" rssbud="1">
+
+When `mediaType` is `tv`, `sheet` should be:
+
+| Airing Today | On TV      | Top Rated |
+| ------------ | ---------- | --------- |
+| airing-today | on-the-air | top-rated |
+
+When `mediaType` is `movie`, `sheet` should be:
+
+| Now Playing | Upcoming | Top Rated |
+| ----------- | -------- | --------- |
+| now-playing | upcoming | top-rated |
+
+</RouteEn>
 
 ## Trakt.tv
 
