@@ -5312,6 +5312,19 @@
       }
     ]
   },
+  "curiouscat.live": {
+    "_name": "CuriousCat",
+    ".": [
+      {
+        "title": "User",
+        "docs": "https://docs.rsshub.app/en/social-media.html#curiouscat",
+        "source": [
+          "/:id"
+        ],
+        "target": "/curiouscat/user/:id"
+      }
+    ]
+  },
   "curius.app": {
     "_name": "Curius",
     ".": [
@@ -18340,6 +18353,20 @@
       }
     ]
   },
+  "radiofrance.fr": {
+    "_name": "Radio France",
+    "www": [
+      {
+        "title": "Géopolitique",
+        "docs": "https://docs.rsshub.app/traditional-media.html#fa-guo-guang-bo-dian-tai",
+        "source": [
+          "/franceinter/podcasts/geopolitique",
+          "/"
+        ],
+        "target": "/radiofrance/geopolitique"
+      }
+    ]
+  },
   "rarehistoricalphotos.com": {
     "_name": "Rare Historical Photos",
     ".": [
@@ -21121,6 +21148,20 @@
         "docs": "https://docs.rsshub.app/traditional-media.html#tai-wan-ying-wen-xin-wen",
         "source": "/:lang/index",
         "target": "/taiwannews/hot/:lang"
+      }
+    ]
+  },
+  "tangshufang.com": {
+    "_name": "唐书房",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/new-media.html#tang-shu-fang-fen-lei",
+        "source": [
+          "/:category",
+          "/"
+        ],
+        "target": "/tangshufang/:category?"
       }
     ]
   },
