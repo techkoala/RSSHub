@@ -2726,12 +2726,6 @@ others = 热点新闻 + 滚动新闻
 
 </Route>
 
-## 汇通网
-
-### 7x24 小时快讯
-
-<Route author="occupy5" example="/fx678/kx" path="/fx678/kx" />
-
 ## 机核网
 
 ### 分类
@@ -2751,6 +2745,10 @@ others = 热点新闻 + 滚动新闻
 分类名同上。
 
 </Route>
+
+### 专题文章
+
+<Route author="kudryavka1013" example="/gcores/collections/64" path="/gcores/collections/:collection" :paramsDesc="['专题id，可在专题页面的 URL 中找到，如 游戏开发设计心得分享 -- 64']" radar="1" />
 
 ### 播客
 
